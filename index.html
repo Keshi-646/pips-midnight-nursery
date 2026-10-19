@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17152f">
+  <meta name="description" content="Enter Pip's Midnight Nursery, a tiny magical world of dreams, stars and sleepy inventions.">
+  <title>Pip's Midnight Nursery ✦</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sky-decor" aria-hidden="true">✦　·　✧　·　★　·　✦</div>
+
+  <header class="navbar">
+    <a class="logo" href="#home">🌙 Pip's Nursery</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Dreams</a>
+      <a href="#story">My story</a>
+    </nav>
+    <button id="themeToggle" class="theme-button" aria-label="Toggle day and night theme">
+      ☀️ Day mode
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">✦ EST. LAST TUESDAY AT 3 AM ✦</p>
+        <h1>Welcome to<br>my tiny <span>dream world!</span></h1>
+        <p class="intro">
+          Hello, sleepy human! I'm Pip — Junior Dream Engineer,
+          professional cloud hugger, and part-time star collector.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore my dreams ↗</a>
+          <button class="button secondary" id="helloButton">Say hello! 👋</button>
+        </div>
+        <p id="helloMessage" class="message" aria-live="polite"></p>
+        <div class="tiny-note">★ 100% handmade dreams. Probably.</div>
+      </div>
+
+      <div class="character-stage">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <span class="floating-star star-one">✦</span>
+        <span class="floating-star star-two">✧</span>
+        <span class="floating-star star-three">★</span>
+        <div class="moon">☾</div>
+        <button id="pip" class="pip" aria-label="Click Pip for a surprise">
+          <span class="hat">z z z</span>
+          <span class="face">
+            <span class="eyes"><i></i><i></i></span>
+            <span class="cheeks"><i></i><i></i></span>
+            <span class="mouth">ᴗ</span>
+          </span>
+          <span class="body">♡</span>
+        </button>
+        <div class="speech" id="pipSpeech">Psst... click me!</div>
+        <p class="character-caption">PIP · DREAM ENGINEER LV. 01</p>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Nursery announcements">
+      <div>★ DREAM BIG ★ NAP OFTEN ★ COLLECT STARS ★ REPEAT ★ DREAM BIG ★ NAP OFTEN ★</div>
+    </section>
+
+    <section class="section about" id="about">
+      <p class="eyebrow">001 — THE TINY CREATURE</p>
+      <h2>So... who is <span>Pip?</span></h2>
+      <p class="section-intro">
+        A little night creature with a very big imagination and absolutely
+        no idea how taxes work.
+      </p>
+      <div class="fact-grid">
+        <article class="fact-card">
+          <span class="fact-icon">🪄</span>
+          <h3>Special skill</h3>
+          <p>Turning ordinary thoughts into extraordinary dreams.</p>
+        </article>
+        <article class="fact-card">
+          <span class="fact-icon">🍪</span>
+          <h3>Fuel source</h3>
+          <p>Moon cookies, warm milk and compliments.</p>
+        </article>
+        <article class="fact-card">
+          <span class="fact-icon">💭</span>
+          <h3>Biggest dream</h3>
+          <p>Making sure nobody goes to sleep feeling alone.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <p class="eyebrow">002 — INVENTIONS FROM BEDTIME</p>
+      <h2>Things I've <span>dreamed up</span></h2>
+      <p class="section-intro">Three tiny inventions. One very sleepy inventor.</p>
+
+      <div class="project-grid">
+        <article class="project-card pink">
+          <div class="project-art" aria-hidden="true">🎵</div>
+          <span class="project-number">DREAM NO. 001</span>
+          <h3>The Lullaby Box</h3>
+          <p>A little music box for noisy minds and restless nights.</p>
+          <button class="project-button" data-project="lullaby">Open invention ↗</button>
+        </article>
+
+        <article class="project-card blue">
+          <div class="project-art" aria-hidden="true">🏮</div>
+          <span class="project-number">DREAM NO. 002</span>
+          <h3>Moonlight Lamp</h3>
+          <p>A pocket-sized moonbeam for the darkest corners.</p>
+          <button class="project-button" data-project="lamp">Open invention ↗</button>
+        </article>
+
+        <article class="project-card yellow">
+          <div class="project-art" aria-hidden="true">📖</div>
+          <span class="project-number">DREAM NO. 003</span>
+          <h3>Cloud Stories</h3>
+          <p>Little adventures written on clouds before they disappear.</p>
+          <button class="project-button" data-project="stories">Open invention ↗</button>
+        </article>
+      </div>
+      <p id="projectMessage" class="project-message" aria-live="polite">
+        Choose an invention to see what it does!
+      </p>
+    </section>
+
+    <section class="section story" id="story">
+      <p class="eyebrow">003 — A VERY IMPORTANT ADVENTURE</p>
+      <h2>The night I lost <span>a star...</span></h2>
+      <div class="story-card">
+        <div class="story-illustration" aria-hidden="true">🌌</div>
+        <div>
+          <p>One sleepy evening, Pip noticed a tiny star missing from the sky.</p>
+          <p>Armed with one lantern, two biscuits and zero navigation skills, Pip climbed the tallest cloud to find it.</p>
+          <p>At the top, Pip discovered the star had fallen into a little flower. It wasn't lost. It was keeping the flower company.</p>
+          <p class="story-ending">And that night, Pip learned that even the smallest light can make someone feel less alone. ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guestbook">
+      <p class="eyebrow">004 — LEAVE A LITTLE MAGIC</p>
+      <h2>What's your <span>dream?</span></h2>
+      <p class="section-intro">Tell Pip one tiny thing that makes you happy.</p>
+      <form id="dreamForm">
+        <label for="dreamInput">My little happy thing is...</label>
+        <div class="form-row">
+          <input id="dreamInput" maxlength="120" placeholder="e.g. rainy evenings ☔" required>
+          <button class="button primary" type="submit">Send to the moon ✦</button>
+        </div>
+      </form>
+      <p id="dreamMessage" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with sleepy eyes and a ridiculous amount of stardust.</p>
+    <p>© Pip's Midnight Nursery · <a href="#home">Back to the moon ↑</a></p>
+    <p class="secret-hint">Psst... the moon knows a secret. ✧</p>
+  </footer>
+
+  <div id="secret" class="secret" hidden role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+    <div class="secret-card">
+      <button id="closeSecret" class="close-button" aria-label="Close secret">✕</button>
+      <div class="secret-art">🌟</div>
+      <h2 id="secretTitle">You found the sleepy star!</h2>
+      <p>Pip's secret message: You don't have to shine every day. Resting is magic, too. ♡</p>
+      <button id="secretDone" class="button primary">Keep this little star ✨</button>
+    </div>
+  </div>
+</body>
+</html>
