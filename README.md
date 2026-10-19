@@ -32,7 +32,7 @@ No backend or package installation is required.
 
 ## 🌐 Live Demo
 
-Add your deployed website URL here.
+https://keshi-646.github.io/pips-midnight-nursery/
 
 ## 💡 Project Story
 
